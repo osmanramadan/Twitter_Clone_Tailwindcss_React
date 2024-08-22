@@ -2,9 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  background-color:black
+}
+
 .active-link {
-  @apply flex justify-center items-center hover:text-white ml-4 xl:justify-start text-blue-400 mt-7;
+  @apply flex items-center ml-4 xl:justify-start text-white mt-7
 }
-.title-link{
-  @apply hidden xl:block hover:text-white xl:ml-3 
+
+.title-link {
+  @apply hidden xl:inline text-[#E1E3E4] bg-transparent xl:ml-6 text-2xl font-[400];
 }
+
+
+.title-icon {
+  @apply  text-[#E1E3E4] font-[700] text-2xl bg-transparent
+} 
+
+
+.tweet-btn {
+  @apply mt-3 py-3 hidden xl:block xl:flex justify-center items-center  bg-blue-custom text-white font-bold rounded-full;
+}
+
+.icon {
+  @apply block xl:hidden flex justify-center items-center h-16 w-16 hover:text-blue-custom bg-blue-custom text-white font-bold rounded-full;
+}
+
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active-link {
+  @apply flex justify-center items-center ml-4 xl:justify-start text-white mt-7;
+}
+
+.title-link {
+  @apply hidden xl:block hover:text-blue-400 xl:ml-3 text-xl;
+}
+
+.title-icon {
+  @apply hover:text-blue-400;
+}
+
+.tweet-btn {
+  @apply mt-3 py-3 hidden xl:block xl:flex justify-center items-center  bg-blue-custom text-white font-bold rounded-full;
+}
+
+.icon{
+  @apply block xl:hidden ml-3 hover:text-blue-400 p-2  bg-blue-custom text-white font-bold rounded-full;
+}
+ */
