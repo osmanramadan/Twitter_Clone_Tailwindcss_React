@@ -2,54 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 * {
   background-color:black
 }
 
+
 .active-link {
-  @apply flex items-center ml-4 xl:justify-start text-white mt-7
+  @apply flex items-center ml-4 xl:justify-start text-white mt-4;
 }
 
 .title-link {
-  @apply hidden xl:inline text-[#E1E3E4] bg-transparent xl:ml-6 text-2xl font-[400];
+  @apply hidden xl:inline text-[#E1E3E4] bg-transparent xl:ml-6 text-xl font-[470];
 }
 
 
 .title-icon {
-  @apply  text-[#E1E3E4] font-[700] text-2xl bg-transparent
+  @apply  text-[#E1E3E4] font-[700] text-xl bg-transparent
 } 
 
 
-.tweet-btn {
-  @apply mt-3 py-3 hidden xl:block xl:flex justify-center items-center  bg-blue-custom text-white font-bold rounded-full;
+.title-icon:hover{
+  color:rgb(29, 155, 240);
 }
+
+
+.tweet-btn {
+  @apply !mt-1 w-5/6 py-4 hidden  xl:block xl:flex justify-center items-center text-white font-bold rounded-full;
+  background-color:rgb(29, 155, 240);
+}
+
+.tweet-btn:hover {
+  @apply bg-blue-custom
+}
+
 
 .icon {
-  @apply block xl:hidden flex justify-center items-center h-16 w-16 hover:text-blue-custom bg-blue-custom text-white font-bold rounded-full;
+  @apply block xl:hidden flex justify-center items-center h-16 w-16  bg-blue-custom text-white font-bold rounded-full;
+  background-color:rgb(29, 155, 240);
 }
 
-
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-.active-link {
-  @apply flex justify-center items-center ml-4 xl:justify-start text-white mt-7;
+.icon:hover {
+  @apply bg-blue-custom !important
 }
 
-.title-link {
-  @apply hidden xl:block hover:text-blue-400 xl:ml-3 text-xl;
+.active-btn {
+  position: relative;
 }
 
-.title-icon {
-  @apply hover:text-blue-400;
+.active-btn::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; /* Adjust this to position the line perfectly */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20%; /* Adjust the width as needed */
+  height: 5px;
+  background-color: #1DA1F2; /* Customize the blue color */
+  border-radius: 2px;
 }
-
-.tweet-btn {
-  @apply mt-3 py-3 hidden xl:block xl:flex justify-center items-center  bg-blue-custom text-white font-bold rounded-full;
-}
-
-.icon{
-  @apply block xl:hidden ml-3 hover:text-blue-400 p-2  bg-blue-custom text-white font-bold rounded-full;
-}
- */
