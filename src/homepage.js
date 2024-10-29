@@ -7,7 +7,7 @@ export default function Homepage() {
 
       {/* Left Sidebar */}
       <div className="xl:mx-5 xl:w-1/6 w-16 flex flex-col text-2xl">
-        <div className="fixed top-0 left-11 bottom-0 xl:mx-4 xl:w-1/5 w-16 flex flex-col text-2xl">
+        <div className="fixed top-0 left-11 bottom-0 xl:mx-4 xl:w-1/5 w-15 flex flex-col text-2xl">
           <a className="active-link !mt-1">
             <i className="fa-solid fa-x text-4xl hover:text-blue-custom"></i>
           </a>
@@ -51,14 +51,14 @@ export default function Homepage() {
           <a className="active-link !mx-0 !mt-1">
             <i className="fa-solid fa-feather icon text-white"></i>
           </a>
-          <span className="tweet-btn">Post</span>
+          <span className="tweet-btn !text-lg !h-12">Post</span>
 
           {/* Profile Info */}
           <div className="w-14 xl:w-full mx-auto mt-auto flex items-center mb-3 p-2 cursor-pointer">
             <img  className="w-12 !mx-0 h-12 rounded-full" src="/osman.png" alt="person" />
             <div className="hidden xl:flex flex-col xl:ml-4">
-              <h4 className="text-gray-800 text-white font-[400]">Osman Ramadan</h4>
-              <p className="text-gray-400 text-xl">@0smanramadan</p>
+              <h4 className="!text-white !font-[500] text-lg">Osman Ramadan</h4>
+              <p className="text-[#6A6F73] text-base">@0smanramadan</p>
             </div>
             <i className="fa-solid fa-ellipsis hidden xl:flex items-center xl:ml-5 text-white"></i>
           </div>
@@ -76,8 +76,8 @@ export default function Homepage() {
       <div className="xl:w-3/5 w-full">
         <div className="flex justify-between items-center  mt-4 mb-5 h-8 text-white p-0 sticky z-10">
           <span className="h-40 w-px bg-[#2F3336]"></span>
-          <span className="active-btn w-1/2 py-5 h-39  text-center text-[20px] font-bold hover:bg-[#181818]">For you</span>
-          <span className="w-1/2 py-5 h-39  text-center text-[#6B7074] text-[20px] hover:bg-[#181818]">Following</span>
+          <span className="active-btn w-1/2 py-5 h-38  text-center text-[15px] font-bold hover:bg-[#181818]">For you</span>
+          <span className="w-1/2 py-5 h-38  text-center text-[#6B7074] text-[16px] hover:bg-[#181818]">Following</span>
         </div>
 
         {/* Divider */}
@@ -98,12 +98,13 @@ export default function Homepage() {
       style={{ fontFamily: 'Arial, sans-serif' }} 
       className="
         w-full
-        text-[1.5rem]
+        text-[20px]
+        xl:text-[1rem]
         h-12
         bg-transparent
         text-white
         placeholder-[#71767B]
-        placeholder:text-[1.7rem]
+        placeholder:text-[1.3rem]
         placeholder:font-[300]
         cursor-text
         focus:outline-none
@@ -114,7 +115,7 @@ export default function Homepage() {
     Everyone can reply
   </span>
   {/* divider */}
-  <div className="w-full h-[1px] bg-[#2F3336] mb-2"></div>
+  <div className="w-full h-[1px] bg-[#2F3336]"></div>
   {/* section */}
   <span className="px-4 py-6 mx-4">
     <div className="flex flex-row justify-between w-full">
@@ -127,7 +128,7 @@ export default function Homepage() {
             <span className='ml-2'><i className="fas fa-image"></i></span>
         </div>
         <div>
-             <span className="post-btn">Post</span>
+             <span className="px-4 py-2 flex justify-center items-center text-white font-bold rounded-full bg-[#1A8CD8]">Post</span>
         </div>
     </div>
   </span>
@@ -135,9 +136,9 @@ export default function Homepage() {
   </div>
   </div>
       {/* Divider */}
-      <div className="w-full h-[1px] bg-[#2F3336] mt-4"></div>
+      <div className="w-full h-[1px] bg-[#2F3336] mt-6"></div>
       <div className='flex items-center'>
-        <span className="py-4 m-0 hover:bg-[#080808] text-[#1988D3] font-[450] text-[1.3rem] w-full text-center">Show 200 posts</span>
+        <span className="py-4 m-0 hover:bg-[#080808] text-[#1988D3] font-[450] text-[1.1rem] w-full text-center">Show 200 posts</span>
       </div>
       {/* Divider */}
         <div className="w-full h-[1px] bg-[#2F3336] mb-2"></div>
@@ -203,9 +204,34 @@ export default function Homepage() {
 
 
       {/* Right Sidebar */}
-      <div className="xl:w-1/5 hidden text-white xl:block pl-2 w-full flex flex-col">
-        osman
+    <div className="xl:w-1/5 hidden text-white xl:block pl-2 w-full flex flex-col">
+    <div className="flex items-center bg-[#1A1A1A] rounded-full p-3 mt-2">
+    <i className="fas fa-search text-gray-400 mr-2 bg-[#111111]"></i>
+    <input
+      type="text"
+      placeholder="Search"
+      className="bg-transparent text-white placeholder-gray-400 outline-none w-full"
+    />
+    </div>
+ {/* What's Happening Section */}
+ <div className="bg-[#1A1A1A] rounded-lg p-4">
+    <h3 className="text-lg font-bold mb-2">What’s Happening</h3>
+    <div className="flex flex-col space-y-2">
+      <div className="bg-[#2F3336] rounded p-2">
+        <h4 className="text-white">Trending Topic 1</h4>
+        <p className="text-gray-400">Details about this topic...</p>
       </div>
+      <div className="bg-[#2F3336] rounded p-2">
+        <h4 className="text-white">Trending Topic 2</h4>
+        <p className="text-gray-400">Details about this topic...</p>
+      </div>
+      <div className="bg-[#2F3336] rounded p-2">
+        <h4 className="text-white">Trending Topic 3</h4>
+        <p className="text-gray-400">Details about this topic...</p>
+      </div>
+    </div>
+  </div>
+  </div>
     </div>
   );
 }
