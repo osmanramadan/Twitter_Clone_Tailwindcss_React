@@ -1,4 +1,4 @@
 ﻿# Tailwindcss_React_Twitter_Clone
- ![cover](imgs/cover.png)
+ ![cover](imgs/1.PNG)
 
  
